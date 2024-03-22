@@ -19,7 +19,7 @@ const Service = () => {
         form.append('decription', values.decription);
         form.append('cost', values.cost);
 
-        axios.post('https://garage-api-a1av.onrender.com/service/create', form,
+        axios.post('https://garage-api-fdul.onrender.com/service/create', form,
             {
                 headers: {
                     techniciantoken: techniciantoken,
@@ -63,7 +63,7 @@ const Service = () => {
                 >
                     {
                         (props) => (
-                            <Form className='d-flex flex-column'>
+                            <Form className=' d-flex flex-column'>
                                 <label htmlFor="image"  className='fw-bold'>image</label>
                                 <input type="file" className='in-gov' onChange={(e) => props.setFieldValue("image", e.target.files[0])} />
                                 <span><ErrorMessage name='image' /><br></br></span>

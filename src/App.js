@@ -73,9 +73,9 @@ function App() {
           </Route>
 
           <Route path="/customer-login">
-            <Cprotect>
+            
               <Clogin></Clogin>
-            </Cprotect>
+            
           </Route>
 
 

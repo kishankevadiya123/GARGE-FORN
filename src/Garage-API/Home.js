@@ -28,7 +28,7 @@ const Home = () => {
   }, [])
 
   const getService = () => {
-    axios.get('https://garage-api-a1av.onrender.com/service/find')
+    axios.get('https://garage-api-fdul.onrender.com/service/find')
       .then((res) => {
         console.log(res.data.data);
         setService(res.data.data)
@@ -104,8 +104,8 @@ const Home = () => {
       </Container>
 
 
-      {/* Serive CARD  WITH Loop DATA MAP */}
-      {/* <Container fluid className='text-white pt-5 pb-5 bg-lite'>
+      
+      <Container fluid className='text-white pt-5 pb-5 bg-lite'>
         <Container className="">
           <Row>
             <div className='text-white text-center pb-5'>
@@ -117,7 +117,7 @@ const Home = () => {
             {
               service.map((el, index) => {
                 return <Card style={{ width: '363px' }} key={index} onClick={card} className='p-0 box pos-rel '>
-                  <div className="img-box border-bottom"><Card.Img variant="top" className='p-0' src={'https://garage-api-a1av.onrender.com/images/' + el.image} /></div>
+                  <div className="img-box border-bottom"><Card.Img variant="top" className='p-0' src={'https://garage-api-fdul.onrender.com/images/' + el.image} /></div>
                   <Card.Body>
                     <div className='icon-color'><Card.Title className='pt-1 mb-2 fw-bold  text-uppercase' >{el.serviceName}</Card.Title></div>
                     <p className='pt-1  mb-2 fs-18 text-color'>{el.decription}</p>
@@ -129,10 +129,10 @@ const Home = () => {
             }
           </Row>
         </Container>
-      </Container> */}
+      </Container>
 
       {/* -  -  -  -  slider   -  -  -    */}
-      <Container fluid className='text-white pt-5 pb-5 bg-lite'>
+      {/* <Container fluid className='text-white pt-5 pb-5 bg-lite'>
         <Container className="">
           <Row className=" py-5 gap-4">
             <div className="slider-container">
@@ -142,7 +142,7 @@ const Home = () => {
                     return <div className='col-4'>
 
                       <Card style={{ width: '363px' }} key={index} onClick={card} className='p-0 box pos-rel '>
-                        <div className="img-box border-bottom"><Card.Img variant="top" className='p-0' src={'https://garage-api-a1av.onrender.com/images/' + el.image} /></div>
+                        <div className="img-box border-bottom"><Card.Img variant="top" className='p-0' src={'https://garage-api-fdul.onrender.com/images/' + el.image} /></div>
                         <Card.Body>
                           <div className='icon-color'><Card.Title className='pt-1 mb-2 fw-bold  text-uppercase' >{el.serviceName}</Card.Title></div>
                           <p className='pt-1  mb-2 fs-18 text-color'>{el.decription}</p>
@@ -157,7 +157,7 @@ const Home = () => {
             </div>
           </Row>
         </Container>
-      </Container>
+      </Container> */}
 
 
       {/*   HOW WE WORK */}
@@ -276,7 +276,7 @@ export default Home
 
                   <div className=" text-dark pos-rel">
                     <div className="card-icon rounded-circle"><RiServiceFill className='icon-color fs-2' /></div>
-                    <div className="img-box"><img className='w-100' src={'https://garage-api-a1av.onrender.com/images/' + el.image} alt="" /></div>
+                    <div className="img-box"><img className='w-100' src={'https://garage-api-fdul.onrender.com/images/' + el.image} alt="" /></div>
                     <div className='p-3'>
                       <h4 className='pt-1 fs-6 mb-0 fw-bold icon-color' >{el.serviceName}</h4>
                       <p className='pt-1  mb-0 fs-18'>{el.decription}</p>

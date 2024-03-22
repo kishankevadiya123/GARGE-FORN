@@ -30,7 +30,7 @@ const Vehical = () => {
                     }}
                     validationSchema={vehicalschema}
                     onSubmit={async (values) => {
-                        axios.post('https://garage-api-a1av.onrender.com/vehicle/create', values,
+                        axios.post('https://garage-api-fdul.onrender.com/vehicle/create', values,
                             {
                                 headers: { customertoken: token }
                             })
