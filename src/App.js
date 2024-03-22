@@ -54,16 +54,16 @@ function App() {
           </Route>
 
           <Route path="/technician-login">
-            <Tprotect>
+            
               <Login></Login>
-            </Tprotect>
+            
           </Route>
 
           {/* serivce page */}
           <Route path="/service">
-            <Tprotect>
+            
               <Service></Service>
-            </Tprotect>
+            
           </Route>
 
 
