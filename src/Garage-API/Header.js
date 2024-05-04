@@ -19,7 +19,7 @@ const Header = () => {
             <div className="col-3">
               <Navbar expand="lg" className="">
                 <Container>
-                  <Navbar.Brand href="/"><img src="https://duruthemes.com/demo/html/carex/img/logo-light.png" className='w-100 img-fluid' alt="" /></Navbar.Brand>
+                  <Navbar.Brand href="/"><h1 className='logo'>Garage</h1></Navbar.Brand>
                 </Container>
               </Navbar>
             </div>

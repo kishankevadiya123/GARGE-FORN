@@ -15,6 +15,13 @@
 .text-color{
     color: #929090 !important;
 }
+.logo{
+    color:white;
+}
+.logo:hover{
+    
+    color: #d3071f;
+}
 /* .box{
     background-color: #fc3d5336;
     border: dashed #fc3d54;
